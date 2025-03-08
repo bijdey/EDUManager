@@ -455,12 +455,18 @@ header .container {
     display: block;
 }
 
+/*whychoseus*/
+
 .boxsec,
 .servicesbox {
     text-align: center;
     padding: 20px;
     margin: 0 auto;
     display: block;
+}
+.servicesbox{
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5) !important;
+
 }
 
 .boxsec p {
@@ -517,4 +523,19 @@ header .container {
 
 .whycoseus .col-md-3 {
     margin-bottom: 15px;
+}
+
+
+/*ourpartner*/
+.partner-img {
+    width: 150px;  /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    object-fit: contain; /* Ensures image scales properly */
+}
+
+
+/*bottomposter*/
+.bottomposter{
+    background-color: #FFB901  ;
+    
 }
