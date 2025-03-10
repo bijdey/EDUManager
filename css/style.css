@@ -464,6 +464,7 @@ header .container {
   margin: 0 auto;
   display: block;
 }
+
 .servicesbox {
   background: linear-gradient(to bottom, #ffffff, #f5f5f5) !important;
 }
@@ -526,42 +527,91 @@ header .container {
 
 /*ourpartner*/
 .partner-img {
-  width: 150px; /* Set fixed width */
-  height: 150px; /* Set fixed height */
-  object-fit: contain; /* Ensures image scales properly */
+  width: 150px;
+  /* Set fixed width */
+  height: 150px;
+  /* Set fixed height */
+  object-fit: contain;
+  /* Ensures image scales properly */
 }
 
 /*dream*/
-#dhr {
-  height: 5px;
-  border: none;
-  background: 
-  linear-gradient(to right, #ffb901 0%, #ffb901 25%, #043873 25%, #043873 100%);
+.tacontSec.active {
+  display: block;
 }
-.fsize p {
-  /* Your styles here */
+
+.tacontSec {
+  display: none;
+}
+
+ul.tablist {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tablinlist {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  /* Adds horizontal spacing */
+}
+
+.tablinlist.active {
+  border-bottom: 2px solid #ffb901;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.fontSize p {
   font-size: 18px;
   color: #000000;
 }
 
-.fsize h3 {
+.fontSize h3 {
   color: #043873;
   font-size: 35px;
   font-weight: bold;
 }
-#applybtn{
-    margin-top: 20px;
-    background-color: #043873;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px; 
-    cursor: pointer;
+
+.applyBtn {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: #043873;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 
 
-/*bottomposter*/
-.bottomposter {
-  background-color: #ffb901;
-}
+
+/*bottomPoster*/
+
+
+.bottomPoster {
+    background-color: #ffb901;
+    height: 70vh; 
+  }
+  
+  .bottomPoster .imgbox {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .bottomPoster .imgbox img {
+    padding: 0;
+    max-width: 100%;
+
+  }
+  
+
+
+  /*sucessStory*/
+
+  

@@ -39,3 +39,21 @@ $(".count").each(function () {
       }
     );
 });
+
+// Tab
+$(document).ready(function () {
+  $(".tablinlist").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $(".tablinlist").removeClass("active");
+    $(".tacontSec").removeClass("active");
+
+    $(this).addClass("active");
+    $("#" + tab_id).addClass("active");
+  });
+});
+
+
+
+
+
