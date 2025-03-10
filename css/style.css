@@ -3,539 +3,565 @@
 @import url("/css/master.css");
 
 header {
-    position: relative;
-    margin: 0px;
-    padding: 0px 10px;
-    display: inline-block;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    z-index: 999;
+  position: relative;
+  margin: 0px;
+  padding: 0px 10px;
+  display: inline-block;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 999;
 }
 
 header .container-fluid {
-    width: calc(100% - 100px);
+  width: calc(100% - 100px);
 }
 
 header .row {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .logo {
-    width: 200px;
-    margin: 0px;
-    padding: var(--zeropadding);
-    display: inline-block;
+  width: 200px;
+  margin: 0px;
+  padding: var(--zeropadding);
+  display: inline-block;
 }
 
 header nav {
-    margin: 0px;
-    padding: var(--zeropadding);
-    display: inline-block;
-    width: auto !important;
-    box-shadow: unset !important;
-    border: unset !important;
+  margin: 0px;
+  padding: var(--zeropadding);
+  display: inline-block;
+  width: auto !important;
+  box-shadow: unset !important;
+  border: unset !important;
 }
 
 nav ul {
-    margin: 0px;
-    padding: var(--zeropadding);
-    list-style: none;
-    width: auto;
-    display: inline-block;
+  margin: 0px;
+  padding: var(--zeropadding);
+  list-style: none;
+  width: auto;
+  display: inline-block;
 }
 
 .dropdown li:hover {
-    background: rgb(243, 245, 253);
+  background: rgb(243, 245, 253);
 }
 
 nav ul li span {
-    font-size: 13px;
-    line-height: unset;
-    margin: 0px;
+  font-size: 13px;
+  line-height: unset;
+  margin: 0px;
 }
 
 nav ul li {
-    margin: 0px;
-    padding: var(--zeropadding);
-    width: auto;
-    display: inline-block;
-    cursor: pointer;
+  margin: 0px;
+  padding: var(--zeropadding);
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
 }
 
 nav ul li a {
-    padding: 0px 20px;
-    font-size: 16px;
-    font-weight: var(--fontwei60);
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    line-height: 55px;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: var(--fontwei60);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  line-height: 55px;
 }
 
 nav ul li ul li a span {
-    width: 19px;
-    display: inline-block;
-    margin: 0px 15px 0px 0px;
-    object-fit: contain;
-    object-position: center top;
-    overflow: hidden;
-    height: 20px;
-    top: 0px;
-    position: relative;
-    line-height: unset;
+  width: 19px;
+  display: inline-block;
+  margin: 0px 15px 0px 0px;
+  object-fit: contain;
+  object-position: center top;
+  overflow: hidden;
+  height: 20px;
+  top: 0px;
+  position: relative;
+  line-height: unset;
 }
 
 .megaropdown {
-    position: absolute;
-    display: none;
+  position: absolute;
+  display: none;
 }
 
-ul .dropdown:hover>ul,
+ul .dropdown:hover > ul,
 .dropnav:hover .megaropdown {
-    display: var(--disblo);
+  display: var(--disblo);
 }
 
 .dropdown ul,
 .megaropdown {
-    width: 250px;
-    text-align: left;
-    display: none;
-    left: 0px;
-    right: 0px;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(7, 7, 7, 0.13) 0px 20px 20px 0px;
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px solid rgb(233, 232, 232);
-    position: absolute;
-    top: 100%;
+  width: 250px;
+  text-align: left;
+  display: none;
+  left: 0px;
+  right: 0px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(7, 7, 7, 0.13) 0px 20px 20px 0px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid rgb(233, 232, 232);
+  position: absolute;
+  top: 100%;
 }
 
 .dropdown li {
-    position: relative;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 8px 5px;
-    display: block;
-    width: 100%;
-    margin: 0px 0px 2px;
-    height: unset;
-    transition: all 0.5s linear 0s;
-    text-align: left;
-    line-height: 25px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 5px;
+  display: block;
+  width: 100%;
+  margin: 0px 0px 2px;
+  height: unset;
+  transition: all 0.5s linear 0s;
+  text-align: left;
+  line-height: 25px;
 }
 
 .dropdown li:last-child a {
-    border-bottom: unset;
-    margin-bottom: unset;
-    padding-bottom: unset;
+  border-bottom: unset;
+  margin-bottom: unset;
+  padding-bottom: unset;
 }
 
 .dropdown li a {
-    padding: 0px;
-    width: 100%;
-    flex-direction: row;
-    line-height: 20px;
-    font-size: 14px;
-    transition: all 0.5s linear 0s;
-    font-weight: 500;
-    gap: 5px;
-    color: rgb(0, 0, 0) !important;
+  padding: 0px;
+  width: 100%;
+  flex-direction: row;
+  line-height: 20px;
+  font-size: 14px;
+  transition: all 0.5s linear 0s;
+  font-weight: 500;
+  gap: 5px;
+  color: rgb(0, 0, 0) !important;
 }
 
 .dropdown li a sum,
 .megaropdown li a span {
-    border-radius: 4px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-dropdown ul {
-    top: 0px;
-    left: 100%;
+  top: 0px;
+  left: 100%;
 }
 
 .sub-dropdown a {
-    position: relative;
+  position: relative;
 }
 
 .sub-dropdown ul li a span {
-    position: relative !important;
+  position: relative !important;
 }
 
 .sub-dropdown a span:last-child {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: max-content;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: max-content;
 }
 
 .subdelis ul {
-    padding-right: 0px;
+  padding-right: 0px;
 }
 
 nav ul li a p {
-    margin: 5px 0px 0px;
-    padding: var(--zeropadding);
-    font-size: 12px;
-    color: rgb(110, 109, 121);
-    width: 100%;
-    line-height: 25px;
+  margin: 5px 0px 0px;
+  padding: var(--zeropadding);
+  font-size: 12px;
+  color: rgb(110, 109, 121);
+  width: 100%;
+  line-height: 25px;
 }
 
 .megaropdown {
-    height: max-content;
-    margin: 0px auto;
-    width: 60%;
+  height: max-content;
+  margin: 0px auto;
+  width: 60%;
 }
 
 header .container {
-    position: relative;
+  position: relative;
 }
 
 .megaropdown h6 {
-    padding: 0px 0px 2px;
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(1, 55, 17);
-    text-align: left;
-    border-bottom: 2px solid rgb(1, 55, 17);
-    margin-bottom: 20px;
-    width: max-content;
+  padding: 0px 0px 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(1, 55, 17);
+  text-align: left;
+  border-bottom: 2px solid rgb(1, 55, 17);
+  margin-bottom: 20px;
+  width: max-content;
 }
 
 .megaropdown ul li {
-    width: 100%;
-    margin-bottom: 0px;
-    cursor: pointer;
+  width: 100%;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
 .megaropdown ul li a {
-    position: relative;
-    border-radius: 4px;
-    padding: 9px 10px;
-    width: 100%;
-    margin: 0px 0px 2px;
-    height: unset;
-    text-align: left;
-    display: flex;
-    flex-flow: row;
-    line-height: 20px;
-    font-size: 14px;
-    transition: all 0.5s linear 0s;
-    font-weight: 500;
-    place-content: flex-start;
-    cursor: pointer;
-    color: rgb(0, 0, 0) !important;
+  position: relative;
+  border-radius: 4px;
+  padding: 9px 10px;
+  width: 100%;
+  margin: 0px 0px 2px;
+  height: unset;
+  text-align: left;
+  display: flex;
+  flex-flow: row;
+  line-height: 20px;
+  font-size: 14px;
+  transition: all 0.5s linear 0s;
+  font-weight: 500;
+  place-content: flex-start;
+  cursor: pointer;
+  color: rgb(0, 0, 0) !important;
 }
 
 .megaropdown li a span {
-    width: 19px;
-    display: inline-block;
-    margin: 0px;
-    object-fit: contain;
-    object-position: center top;
-    overflow: hidden;
-    height: 20px;
-    top: 0px;
-    position: relative;
+  width: 19px;
+  display: inline-block;
+  margin: 0px;
+  object-fit: contain;
+  object-position: center top;
+  overflow: hidden;
+  height: 20px;
+  top: 0px;
+  position: relative;
 }
 
 .nav-toggle {
-    position: relative;
-    margin: 0px;
-    width: 40px;
-    height: 45px;
-    padding: 5px 7px;
-    float: right;
-    border-radius: 4px;
-    top: 4px;
-    border: 1px solid rgba(23, 16, 70, 0.12);
-    display: none;
+  position: relative;
+  margin: 0px;
+  width: 40px;
+  height: 45px;
+  padding: 5px 7px;
+  float: right;
+  border-radius: 4px;
+  top: 4px;
+  border: 1px solid rgba(23, 16, 70, 0.12);
+  display: none;
 }
 
 .nav-toggle div {
-    width: 100%;
-    height: 3px;
-    background: rgb(23, 16, 70);
-    margin: 6px auto;
-    transition: all 0.3s ease 0s;
-    text-align: right;
-    border-radius: 10px;
-    font-size: large;
+  width: 100%;
+  height: 3px;
+  background: rgb(23, 16, 70);
+  margin: 6px auto;
+  transition: all 0.3s ease 0s;
+  text-align: right;
+  border-radius: 10px;
+  font-size: large;
 }
 
 .nav-toggle .two {
-    width: 100%;
-    margin-right: 0px;
+  width: 100%;
+  margin-right: 0px;
 }
 
 .nav-toggle .three {
-    width: 100%;
-    margin-right: 0px;
+  width: 100%;
+  margin-right: 0px;
 }
 
 .userco {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    width: auto;
-    display: flex;
-    cursor: pointer !important;
-    gap: 10px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  display: flex;
+  cursor: pointer !important;
+  gap: 10px;
 }
 
 .userco span {
-    width: 50px;
-    height: auto;
-    display: block;
-    cursor: pointer;
+  width: 50px;
+  height: auto;
+  display: block;
+  cursor: pointer;
 }
 
 .userco span img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .divider-box h4 {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(1, 55, 17);
-    text-align: left;
-    border-bottom: 2px solid rgb(1, 55, 17);
-    margin-bottom: 20px;
-    padding-bottom: 2px;
-    width: max-content;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(1, 55, 17);
+  text-align: left;
+  border-bottom: 2px solid rgb(1, 55, 17);
+  margin-bottom: 20px;
+  padding-bottom: 2px;
+  width: max-content;
 }
 
 .divider-box h5 {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(84, 182, 74);
-    margin-bottom: 30px;
-    width: 100%;
-    margin-top: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(84, 182, 74);
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top: 0px;
 }
 
 .divider-box:last-child h5 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .styled-rich-text {
-    position: relative;
-    margin: 20px 0px 0px;
-    padding: 0px 5px;
-    width: 100%;
+  position: relative;
+  margin: 20px 0px 0px;
+  padding: 0px 5px;
+  width: 100%;
 }
 
 .styled-rich-text img {
-    max-width: 35px;
-    height: auto;
-    text-align: left;
-    margin: 0px 0px 10px !important;
+  max-width: 35px;
+  height: auto;
+  text-align: left;
+  margin: 0px 0px 10px !important;
 }
 
 .styled-rich-text p {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.71429;
-    font-family: inherit;
-    color: rgb(51, 51, 51);
-    margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.71429;
+  font-family: inherit;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0px;
 }
 
 .support_sec_are a {
-    background: rgb(255, 193, 7);
-    border-radius: 4px;
-    padding: 5px 10px;
-    color: rgb(32, 31, 31);
-    font-weight: bold;
-    font-size: 11px;
-    width: 190px;
+  background: rgb(255, 193, 7);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: rgb(32, 31, 31);
+  font-weight: bold;
+  font-size: 11px;
+  width: 190px;
 }
 
 .support_sec_are a:hover {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .dropnav .row {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .divider-box {
-    position: relative;
-    margin: 0px;
-    padding: 10px;
+  position: relative;
+  margin: 0px;
+  padding: 10px;
 }
 
-.divider-box h4+h5 {
-    margin-top: 0px !important;
+.divider-box h4 + h5 {
+  margin-top: 0px !important;
 }
 
 .styled-rich-text p a {
-    color: rgb(44, 80, 255);
-    transition: all 0.5s linear 0s;
-    line-height: unset;
-    padding: 0px;
-    font-size: 14px;
-    margin: 0px 0px 10px;
+  color: rgb(44, 80, 255);
+  transition: all 0.5s linear 0s;
+  line-height: unset;
+  padding: 0px;
+  font-size: 14px;
+  margin: 0px 0px 10px;
 }
 
 .megaropdown ul li:hover {
-    background: rgb(243, 245, 253);
-    border-radius: 4px;
+  background: rgb(243, 245, 253);
+  border-radius: 4px;
 }
 
 /*-- Slider ---*/
 .slider {
-    background: #043873;
+  background: #043873;
 }
 
 .slider h3 {
-    color: #fff;
-    font-size: 16px;
-    border-bottom: 2px solid #FFB901;
-    width: max-content;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 2px solid #ffb901;
+  width: max-content;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .slider h4 {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 45px;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 45px;
+  margin-bottom: 20px;
 }
 
 .slider h4 span {
-    color: #FFB901;
+  color: #ffb901;
 }
 
 .slider p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 30px;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .slider a {
-    color: #fff;
-    font-size: 14px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .slider .teason {
-    position: relative;
-    top: 50px;
-    display: inline-block;
+  position: relative;
+  top: 50px;
+  display: inline-block;
 }
 
 .slider .imgbox {
-    position: relative;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .slider .imgbox img {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /*whychoseus*/
 
 .boxsec,
 .servicesbox {
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    display: block;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
 }
-.servicesbox{
-    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5) !important;
-
+.servicesbox {
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5) !important;
 }
 
 .boxsec p {
-    font-size: 15px;
-    font-weight: 600;
-    color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
 }
 
 .boxsec h4 {
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #043873;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #043873;
 }
 
 .boxsec h4 .count {
-    margin: 0px 5px;
-    display: inline-block;
+  margin: 0px 5px;
+  display: inline-block;
 }
 
 .TitleSec h4 {
-    margin: 0px 0px 50px;
-    font-size: 30px;
-    font-weight: 800;
-    color: #043873;
+  margin: 0px 0px 50px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #043873;
 }
 
 .whycoseus .servicesbox {
-    background: #f2f2f2;
-    border-radius: 12px;
-    border: 1px solid #000;
-    text-align: center;
-    margin: 0 auto;
-    height: 100%;
+  background: #f2f2f2;
+  border-radius: 12px;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .servicesbox span {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background: #000;
-    border-radius: 4px;
-    padding: 5px;
-    margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #000;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .servicesbox h4 {
-    font-size: 14px;
-    line-height: 21px;
-    color: #043873;
+  font-size: 14px;
+  line-height: 21px;
+  color: #043873;
 }
 
 .whycoseus .col-md-3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 
 /*ourpartner*/
 .partner-img {
-    width: 150px;  /* Set fixed width */
-    height: 150px; /* Set fixed height */
-    object-fit: contain; /* Ensures image scales properly */
+  width: 150px; /* Set fixed width */
+  height: 150px; /* Set fixed height */
+  object-fit: contain; /* Ensures image scales properly */
+}
+
+/*dream*/
+#dhr {
+  height: 5px;
+  border: none;
+  background: 
+  linear-gradient(to right, #ffb901 0%, #ffb901 25%, #043873 25%, #043873 100%);
+}
+.fsize p {
+  /* Your styles here */
+  font-size: 18px;
+  color: #000000;
+}
+
+.fsize h3 {
+  color: #043873;
+  font-size: 35px;
+  font-weight: bold;
+}
+#applybtn{
+    margin-top: 20px;
+    background-color: #043873;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
 }
 
 
+
 /*bottomposter*/
-.bottomposter{
-    background-color: #FFB901  ;
-    
+.bottomposter {
+  background-color: #ffb901;
 }
