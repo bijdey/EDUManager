@@ -586,21 +586,17 @@ ul.tablist {
 }
 
 /*bottomPoster*/
-
 .bottomPoster {
   background-color: #ffb901;
-  height: 70vh;
-}
-
-.bottomPoster .imgbox {
-  display: flex;
-  justify-content: center;
+  min-height: 70vh;
+  padding: 2rem 0;
 }
 
 .bottomPoster .imgbox img {
-  padding: 0;
   max-width: 100%;
+  height: auto;
 }
+
 
 /*sucessStory*/
 
