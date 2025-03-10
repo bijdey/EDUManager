@@ -395,10 +395,10 @@ header .container {
   background: rgb(243, 245, 253);
   border-radius: 4px;
 }
-
 /*-- Slider ---*/
 .slider {
   background: #043873;
+  padding: 60px 0;
 }
 
 .slider h3 {
@@ -451,9 +451,61 @@ header .container {
 
 .slider .imgbox img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
 }
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
+  .slider {
+    padding: 50px 0;
+  }
+  .slider .teason {
+    top: 20px;
+    text-align: center;
+  }
+  .slider h3 {
+    font-size: 14px;
+  }
+  .slider h4 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .slider p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .slider a {
+    font-size: 13px;
+  }
+}
+
+/* Further Adjustments for Mobile Devices */
+@media (max-width: 576px) {
+  .slider {
+    padding: 40px 0;
+  }
+  .slider .teason {
+    top: 10px;
+    text-align: left;
+    display: block; /* Make the container full width so text aligns left */
+  }
+  .slider h3 {
+    font-size: 13px;
+  }
+  .slider h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .slider p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .slider a {
+    font-size: 12px;
+  }
+}
+
 
 /*whychoseus*/
 
