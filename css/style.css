@@ -396,120 +396,125 @@ header .container {
   background: rgb(243, 245, 253);
   border-radius: 4px;
 }
-/*-- Slider ---*/
-.slider {
-  background: #043873;
-  padding: 60px 0;
-}
 
-.slider h3 {
-  color: #fff;
-  font-size: 16px;
-  border-bottom: 2px solid #ffb901;
-  width: max-content;
-  padding-bottom: 5px;
+
+/*EMI*/
+
+.emi {
+  margin-top: 0px;
+}
+.card {
+  padding: 20px;
   margin-bottom: 20px;
+  border: none;
+  box-shadow: none;
+}
+.report-card {
+  min-height: 300px;
 }
 
-.slider h4 {
+
+/*howItWorks*/
+.how-it-works {
+  background-color: #fff; /* White background */
+  color: #000;           /* Black text */
+  padding: 3rem 1rem;
+}
+
+.how-it-works .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.how-it-works .step {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Ensures all icons are the same size */
+.how-it-works .step i {
+  font-size: 60px; 
+  margin-bottom: 1rem;
+}
+
+.how-it-works .step-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works .step-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  /* Using black text for consistency; you can adjust as needed */
+  color: #000;
+}
+
+.how-it-works .btn-apply {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+/*whyChoseUs1*/
+
+.choose-us {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.choose-us .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Step Container */
+.choose-us .step {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Icon Styling */
+.choose-us .step img {
+  width: 60px; /* Ensure uniform size */
+  margin-bottom: 1rem;
+}
+
+.choose-us .step-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.choose-us .step-desc {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Apply Now Button */
+.choose-us .btn-apply {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #28a745; /* Green color similar to your image */
   color: #fff;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 45px;
-  margin-bottom: 20px;
-}
-
-.slider h4 span {
-  color: #ffb901;
-}
-
-.slider p {
-  color: #fff;
-  font-size: 15px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-
-.slider a {
-  color: #fff;
-  font-size: 14px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.slider .teason {
-  position: relative;
-  top: 50px;
+  border-radius: 5px;
+  text-decoration: none;
   display: inline-block;
 }
 
-.slider .imgbox {
-  position: relative;
-  margin: 0;
-  padding: 0;
+.choose-us .btn-apply:hover {
+  background-color: #218838; /* Darker green on hover */
 }
-
-.slider .imgbox img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Responsive Adjustments for Tablets */
-@media (max-width: 768px) {
-  .slider {
-    padding: 50px 0;
-  }
-  .slider .teason {
-    top: 20px;
-    text-align: center;
-  }
-  .slider h3 {
-    font-size: 14px;
-  }
-  .slider h4 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .slider p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .slider a {
-    font-size: 13px;
-  }
-}
-
-/* Further Adjustments for Mobile Devices */
-@media (max-width: 576px) {
-  .slider {
-    padding: 40px 0;
-  }
-  .slider .teason {
-    top: 10px;
-    text-align: left;
-    display: block; /* Make the container full width so text aligns left */
-  }
-  .slider h3 {
-    font-size: 13px;
-  }
-  .slider h4 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .slider p {
-    font-size: 13px;
-    line-height: 22px;
-  }
-  .slider a {
-    font-size: 12px;
-  }
-}
-
-
 /*whychoseus*/
-
 .boxsec,
 .servicesbox {
   text-align: center;
@@ -640,7 +645,7 @@ ul.tablist {
 
 /*bottomPoster*/
 .bottomPoster {
-  background-color: #ffb901;
+  background-color: #fff;
   min-height: 70vh;
   padding: 2rem 0;
 }
@@ -730,5 +735,153 @@ ul.tablist {
   .footer-bottom .container {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-- Slider ---*/
+.slider {
+  background: #fff;
+  padding: 0px 0;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.slider .teason {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.slider h3 {
+  color: #000;
+  font-size: 16px;
+  border-bottom: 2px solid #ffb901;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.slider h4 {
+  color: #000;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.slider h4 span {
+  color: #ffb901;
+  display: block;
+}
+
+.slider p {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.slider .imgbox {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Navigation Arrows */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.owl-prev, 
+.owl-next {
+  position: absolute;
+  font-size: 30px!important;
+  color: #ffb901!important;
+  background: rgba(255,255,255,0.8)!important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%!important;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-prev { left: 20px; }
+.owl-next { right: 20px; }
+
+/* Dots */
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot span {
+  background: #ddd!important;
+  margin: 5px;
+}
+
+.owl-dot.active span {
+  background: #ffb901!important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .slider {
+    padding: 40px 0;
+  }
+  
+  .slider h4 {
+    font-size: 28px;
+  }
+  
+  .slider p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    text-align: center;
+  }
+  
+  .slider h4 span {
+    display: inline;
+  }
+  
+  .slider .teason {
+    padding-top: 40px;
+  }
+  
+  .slider .imgbox {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider h4 {
+    font-size: 24px;
+  }
+  
+  .slider p {
+    font-size: 13px;
+  }
+  
+  .owl-nav {
+    display: none;
   }
 }

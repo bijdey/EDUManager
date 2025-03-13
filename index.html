@@ -132,86 +132,63 @@
       media="all"
       rel="preload"
     />
+
+    <style>
+      /* Apply hover dropdown effect only on larger screens */
+      @media (min-width: 992px) {
+        .navbar-nav .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="/">
-              <img src="./images/edumanagerlogo.png" alt="EDUManager" />
-            </a>
-          </div>
+    <body>
+ 
 
-          <!-- Nav Section -->
-          <nav>
-            <div class="menusectare">
-              <ul>
-                <li class="dropnav">
-                  <a href="/commingSoon.html">
-                    Education Loans
-                    <span><i class="fas fa-angle-down"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="/credit-card-application/hdfc-bank?utm_source=website&amp;utm_medium=landing_page&amp;utm_campaign=credit_cards"
-                    >Partner Banks</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/credit-smart?utm_source=website&amp;utm_medium=landing_page&amp;utm_campaign=credit_smart"
-                    >Resources</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-          <!-- Taggle -->
-          <div class="nav-toggle">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-          </div>
-        </div>
-      </div>
-    </header>
-
+      
     <!-- Slider -->
-    <div class="slider">
+    <div class="slider comnmarpad">
       <div class="container">
         <div class="owl-carousel owl-theme slider_banner">
+          <!-- Slide 1 -->
           <div class="item">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="teason">
                   <h3>Start Your Journey With...</h3>
-                  <h4>
-                    Premium <span>Study Abroad Counselling</span> for Your Dream
-                    University
-                  </h4>
-                  <p>
-                    From university selection to visa assistance, get expert
-                    guidance throughout the application journey and beyond.
-                    Personalized services for undergrad, master’s, PhD, and MBA
-                    aspirants.
-                  </p>
-                  <a href="/commingSoon.html">
-                    Book Free Consultation
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  <h4>Premium <span>Study Abroad Counselling</span> for Your Dream University</h4>
+                  <p>From university selection to visa assistance, get expert guidance throughout the application journey and beyond. Personalized services for undergrad, master’s, PhD, and MBA aspirants.</p>
+                  <a href="/commingSoon.html" class="btn btn-primary">
+                    Apply Loan <i class="fa-solid fa-arrow-right ms-2"></i>
                   </a>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="imgbox">
-                  <img
-                    src="/images/grils.png"
-                    alt="Study Abroad Illustration"
-                  />
+                  <img src="/images/grils.png" alt="Study Abroad Illustration" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 2 (Repeated Content) -->
+          <div class="item">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="teason">
+                  <h3>Continue Your Journey With...</h3>
+                  <h4>Expert <span>Visa Assistance</span> and Application Support</h4>
+                  <p>Comprehensive visa guidance and document preparation services. Get help with SOP writing, recommendation letters, and interview preparation from experienced counselors.</p>
+                  <a href="/commingSoon.html" class="btn btn-primary">
+                    Apply Loan <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="imgbox">
+                  <img src="/images/grils.png" alt="Visa Support" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -220,9 +197,164 @@
       </div>
     </div>
 
+
+<!--EMI-->
+<div class="comnmarpad">
+  <div class="container emi">
+    <div class="row text-center">
+      <h2>Smart EMI Planner</h2>
+    </div>
+    <div class="row align-items-stretch">
+      <!-- Input Section -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <h4 class="mb-3">EMI Calculator</h4>
+          <div class="mb-3">
+            <label for="loanAmount" class="form-label">Loan Amount (₹)</label>
+            <input type="number" id="loanAmount" class="form-control" value="2000000" />
+          </div>
+          <!-- Loan Tenure Input Group: Range and Number Input -->
+          <div class="mb-3">
+            <label class="form-label">Number of Months</label>
+            <div class="d-flex align-items-center gap-2">
+              <input type="range" id="loanTenureRange" min="12" max="240" value="60" class="form-range flex-grow-1" />
+              <input type="number" id="loanTenureInput" min="12" max="240" value="60" class="form-control" style="width: 100px;" />
+            </div>
+          </div>
+          <!-- Interest Rate Input Group: Range and Number Input (0 to 20% with 2 decimals) -->
+          <div class="mb-3">
+            <label class="form-label">Interest Rate (%)</label>
+            <div class="d-flex align-items-center gap-2">
+              <input type="range" id="interestRateRange" min="0" max="20" step="0.01" value="12" class="form-range flex-grow-1" />
+              <input type="number" id="interestRateInput" min="0" max="20" step="0.01" value="12" class="form-control" style="width: 100px;" />
+            </div>
+          </div>
+          <button class="btn  applyBtn w-100 mt-3" onclick="calculateEMI()">Calculate EMI <span><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Output Section -->
+      <div class="col-md-6">
+        <div class="card report-card d-flex flex-column justify-content-center align-items-center h-100">
+          <h4 class="mb-3">EMI Summary</h4>
+          <p>EMI Payable: <strong id="emiResult">₹ 0</strong></p>
+          <p>Total Interest: <strong id="totalInterest">₹ 0</strong></p>
+          <p>Total Amount Paid: <strong id="totalAmount">₹ 0</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <!--howItWorks-->
+
+    <div class="comnmarpad">
+      <div class="container how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="row justify-content-center">
+          <!-- Step 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-2 step">
+            <i class="fa-solid fa-money-check"></i>
+            <h5 class="step-title">Check Loan Eligibility</h5>
+            <p class="step-desc">
+              Quickly verify your loan eligibility online by following quick, easy steps.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-2 step">
+            <i class="fa-solid fa-walkie-talkie"></i>
+            <h5 class="step-title">Talk to Our Loan Experts</h5>
+            <p class="step-desc">
+              Speak with our specialists for tailored guidance, all from the comfort of your home.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-2 step">
+            <i class="fa-solid fa-file-invoice"></i>
+            <h5 class="step-title">Submit Your Documents &amp; Verify</h5>
+            <p class="step-desc">
+              Seamlessly upload documents and fill out digital forms for soft bank verification.
+            </p>
+          </div>
+          <!-- Step 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-2 step">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <h5 class="step-title">Unlock Best Interest Rates</h5>
+            <p class="step-desc">
+              Our experts negotiate competitive rates for you, ensuring you get the best possible offer.
+            </p>
+          </div>
+          <!-- Step 5 -->
+          <div class="col-sm-6 col-md-4 col-lg-2 step">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <h5 class="step-title">Loan Approval &amp; Sanction in 48Hrs</h5>
+            <p class="step-desc">
+              Get your loan approval and sanction in as little as 48 hours.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <a class="btn applyBtn" href="#">
+              Apply Now <span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--whyChoseUs1-->
+   
+    
+
+    <div class="container choose-us">
+      <h2 class="section-title">Why Choose Us?</h2>
+      
+      <div class="row justify-content-center">
+        <!-- Quick Loans -->
+        <div class="col-6 col-md-3 step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3502/3502280.png" alt="Quick Loans">
+          <h5 class="step-title">Quick Loans</h5>
+        </div>
+    
+        <!-- 100% Free Assistance -->
+        <div class="col-6 col-md-3 step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3502/3502323.png" alt="100% Free Assistance">
+          <h5 class="step-title">100% Free Assistance</h5>
+        </div>
+    
+        <!-- Best Interest Rates -->
+        <div class="col-6 col-md-3 step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3502/3502295.png" alt="Best Interest Rates">
+          <h5 class="step-title">Best Interest Rates</h5>
+        </div>
+    
+        <!-- Low Processing Fee -->
+        <div class="col-6 col-md-3 step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3502/3502303.png" alt="Low Processing Fee">
+          <h5 class="step-title">Low Processing Fee</h5>
+        </div>
+      </div>
+    
+      <!-- Apply Now Button -->
+      <div class="row">
+        <div class="col-12">
+          <a class="applyBtn" href="#">Apply Now <span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
     <!--achievement-->
     <div class="achievemnet comnmarpad">
       <div class="container">
+       
         <div class="row">
           <div class="col-md-12 text-center justify-content-center TitleSec">
             <h4>Our Achievements</h4>
@@ -585,6 +717,134 @@
       </div>
     </div>
 
+
+
+
+    
+    <!--faq-->
+
+ <div class="comnmarpad faq">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faqCollapseOne" 
+            aria-expanded="false" 
+            aria-controls="faqCollapseOne"
+          >
+            1. How do I apply for a loan?
+          </button>
+        </h2>
+        <div 
+          id="faqCollapseOne" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="faqHeadingOne" 
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            You can apply for a loan by clicking the “Apply Now” button on our homepage 
+            and following the instructions. Our team will review your application and 
+            get in touch with you within 24-48 hours.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faqCollapseTwo" 
+            aria-expanded="false" 
+            aria-controls="faqCollapseTwo"
+          >
+            2. What documents are required?
+          </button>
+        </h2>
+        <div 
+          id="faqCollapseTwo" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="faqHeadingTwo" 
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Typically, you will need to provide proof of identity (e.g., passport, 
+            driver’s license), proof of address (e.g., utility bill), and proof of 
+            income (e.g., pay slips or bank statements). Exact requirements may vary 
+            based on your application.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faqCollapseThree" 
+            aria-expanded="false" 
+            aria-controls="faqCollapseThree"
+          >
+            3. How long does it take to get approved?
+          </button>
+        </h2>
+        <div 
+          id="faqCollapseThree" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="faqHeadingThree" 
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Our loan approval process typically takes 24 to 48 hours after we receive 
+            all the required documents. In some cases, it may take a bit longer, but 
+            we strive to keep you updated throughout the process.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faqCollapseFour" 
+            aria-expanded="false" 
+            aria-controls="faqCollapseFour"
+          >
+            4. What interest rates do you offer?
+          </button>
+        </h2>
+        <div 
+          id="faqCollapseFour" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="faqHeadingFour" 
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Our interest rates vary depending on the loan type, your credit score, 
+            and other eligibility criteria. Once your application is reviewed, we’ll 
+            provide you with a personalized rate offer.
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+
     <!--footer-->
     <footer class="main-footer">
       <div class="container">
@@ -643,6 +903,12 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
 
     <!--js script-->
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "></script>
