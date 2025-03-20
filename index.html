@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edumanager</title>
+
+    <link rel="icon" href="/images/edumanagerfavicon.svg" type="image/x-icon" />
+    <!--css link-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/google-font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Owl Carousel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- Cuntry Code With Flage -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Code-->
+    <header>
+      <div class="container-fluid header header-top">
+        <div class="row">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="/images/eduLogo.svg" alt="edumanager logo" />
+            </a>
+          </div>
+
+          <!-- Nav Section -->
+          <nav>
+            <div class="menusectare">
+              <ul>
+                <li class="dropnav dropdown">
+                  <a href="#"
+                    >About EduManager
+                    <span><i class="fas fa-angle-down"></i></span
+                  ></a>
+                  <ul>
+                    <li><a href="/comingsoon.html">About Us</a></li>
+                    <li><a href="/comingsoon.html">Our Leadership Team</a></li>
+                    <li><a href="/comingsoon.html">Work with us</a></li>
+                  </ul>
+                </li>
+                <li class="dropnav dropdown">
+                  <a href="#"
+                    >Products <span><i class="fas fa-angle-down"></i></span
+                  ></a>
+                  <ul>
+                    <li><a href="/comingsoon.html">Study in India</a></li>
+                    <li><a href="/comingsoon.html">Study Abroad</a></li>
+                    <li><a href="/comingsoon.html">Executive Programs</a></li>
+                  </ul>
+                </li>
+                <li class="dropnav dropdown">
+                  <a href="#"
+                    >Resources <span><i class="fas fa-angle-down"></i></span
+                  ></a>
+                  <ul>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li class="dropnav dropdown">
+                      <a href="#"
+                        >Calculator
+                        <span><i class="fas fa-angle-down"></i></span
+                      ></a>
+                      <ul>
+                        <li><a href="#emicalculator">EMI Calculator</a></li>
+                        <li>
+                          <a href="/comingsoon.html"
+                            >Cost of Education Calculator</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navBtn">
+                  <a href="/applyeducationloan.html" class="btn applyBtn">
+                    Apply Now
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- User Profile-->
+          <div class="userco">
+            <a href="#support" class="Support">
+              <span>
+                <img src="/images/call.png" alt="" />
+              </span>
+            </a>
+
+            <a href="/comingsoon.html" target="_blank" style="margin-left: 30px">
+              <span>
+                <img src="/images/user.webp" alt="User login" />
+              </span>
+            </a>
+          </div>
+
+          <!-- Taggle -->
+          <div class="nav-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider comnmarpad">
+      <div class="owl-carousel owl-theme slider_banner">
+        <!-- Slide 1 -->
+        <div class="item">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Text Section -->
+              <div class="col-md-6 p-4 sliderText">
+                <h4>Invest in your Future.</h4>
+                <h4>Start your Journey with Us.</h4>
+                <h3>Get Abroad Education Loan in 3 days</h3>
+                <ul class="tick-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Interest Rate Starting at
+                    8.99%
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sanctions in 48 Hours
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Savings up to ₹15 lacs
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Non Collateral Loans
+                  </li>
+                </ul>
+                <a href="/applyeducationloan.html" class="btn applyBtn">
+                  Apply Now
+                </a>
+              </div>
+              <!-- Image Section -->
+              <div class="col-md-6 p-4 text-center">
+                <img
+                  src="/images/grils.png"
+                  alt="Study Abroad Illustration"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  EMI calculator -->
+    <div class="emilcalculaterses" id="emicalculator">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-8">
+            <!-- EMI calculator -->
+            <div class="emicalseardes">
+              <h4>EMI Calculator</h4>
+              <div class="form-group">
+                <label>Select loan amount</label>
+                <div class="inputicorsare">
+                  <span>₹</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="loanamount"
+                    name="loanamount"
+                    placeholder="20,00,000"
+                    value="2000000"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>
+                  Number of months
+                  <span>
+                    <input
+                      type="number"
+                      class="frombox"
+                      id="monthsValue"
+                      name="months"
+                      value="60"
+                      min="10"
+                      max="300"
+                    />
+                    months
+                  </span>
+                </label>
+                <input
+                  class="range-bar"
+                  id="monthsRange"
+                  type="range"
+                  min="10"
+                  max="300"
+                  value="60"
+                  step="1"
+                  style="--webkitProgress: 18.463768%"
+                />
+              </div>
+              <div class="form-group">
+                <label>
+                  Interest rate
+                  <span>
+                    <input
+                      type="number"
+                      class="frombox"
+                      id="interestValue"
+                      name="Interestrate"
+                      value="12"
+                      min="2"
+                      max="16"
+                    />%
+                  </span>
+                </label>
+                <input
+                  class="range-bar"
+                  id="interestRange"
+                  type="range"
+                  min="2"
+                  max="16"
+                  step="0.05"
+                  value="12"
+                  style="--webkitProgress: 71.285714%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Emi  Calc -->
+            <div class="calemidat emicalseardes px-4">
+              <h4>Report</h4>
+              <h5>
+                EMI Payable<b>₹<span id="emiAmount">68,355</span></b>
+              </h5>
+              <h5>
+                Total Interest<b>₹<span id="totalInterest">4,60,789</span></b>
+              </h5>
+              <h5>
+                Total amount
+                <b>₹<span id="totalPayableAmount">24,60,789</span></b>
+              </h5>
+              <h4 class="chartsecare">Payment Breakup</h4>
+              <div id="Chartresldata" class="px-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--howItWorks-->
+
+    <div class="comonmarpad how-it-works-section">
+      <section class="">
+        <div class="container">
+          <!-- Title and Subtitle -->
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+              <h2>How It Works?</h2>
+              <p class="text-muted mb-0">
+                Take advantage of our 100% digital process in just 5 easy steps
+              </p>
+            </div>
+          </div>
+
+          <!-- Steps Row -->
+          <div class="row text-center g-4">
+            <!-- Step 1 -->
+            <div class="col-md-4 col-lg-2 offset-lg-1">
+              <div class="icon-circle">
+                <img src="/images/howitworks1.png" alt="" />
+              </div>
+              <div class="step-title">Check Loan Eligibility</div>
+              <div class="step-description">
+                Quickly verify your loan eligibility online by following quick,
+                easy steps.
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="col-md-4 col-lg-2">
+              <div class="icon-circle">
+                <img src="/images/howitworks2.png" alt="" />
+              </div>
+              <div class="step-title">Talk to Our Loan Experts</div>
+              <div class="step-description">
+                Speak with our loan specialists for tailored guidance, all from
+                the comfort of your home.
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="col-md-4 col-lg-2">
+              <div class="icon-circle">
+                <img src="/images/howitworks3.png" alt="" />
+              </div>
+              <div class="step-title">Submit Your Documents & Verify</div>
+              <div class="step-description">
+                Seamlessly upload documents and fill out digital forms for swift
+                bank verification.
+              </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="col-md-4 col-lg-2">
+              <div class="icon-circle">
+                <img src="/images/howitworks4.png" alt="" />
+              </div>
+              <div class="step-title">Unlock Best Interest Rates</div>
+              <div class="step-description">
+                We negotiate competitive rates for you.
+              </div>
+            </div>
+            <!-- Step 5 -->
+            <div class="col-md-4 col-lg-2">
+              <div class="icon-circle">
+                <img src="/images/howitworks5.png" alt="" />
+              </div>
+              <div class="step-title">
+                Loan Approval &amp; Sanction in 48Hrs*
+              </div>
+              <div class="step-description">
+                Rapid final disbursement due to quick sanctions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Apply Now Button -->
+          <div class="row mt-5">
+            <div class="col text-center">
+              <a class="applyBtn" href="/applyeducationloan.html">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--whyChoseUs1-->
+
+    <div class="container choose-us">
+      <h2 class="section-title">Why Choose Us?</h2>
+
+      <div class="row justify-content-center">
+        <!-- Quick Loans -->
+        <div class="col-6 col-md-3 step">
+          <img src="/images/whychooseus1.png" alt="Quick Loans" />
+          <h5 class="step-title">Quick Loans</h5>
+        </div>
+
+        <!-- 100% Free Assistance -->
+        <div class="col-6 col-md-3 step">
+          <img src="/images/whychooseus2.png" alt="100% Free Assistance" />
+          <h5 class="step-title">100% Free Assistance</h5>
+        </div>
+
+        <!-- Best Interest Rates -->
+        <div class="col-6 col-md-3 step">
+          <img src="/images/whychooseus3.png" alt="Best Interest Rates" />
+          <h5 class="step-title">Best Interest Rates</h5>
+        </div>
+
+        <!-- Low Processing Fee -->
+        <div class="col-6 col-md-3 step">
+          <img src="/images/whychooseus4.png" alt="Low Processing Fee" />
+          <h5 class="step-title">Low Processing Fee</h5>
+        </div>
+      </div>
+
+      <!-- Apply Now Button -->
+      <div class="row">
+        <div class="col-12">
+          <a class="applyBtn" href="/applyeducationloan.html">Apply Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!--faq-->
+
+    <div class="comnmarpad faq" id="faq">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h1 class="lead-heading">
+              Get started with the best loan rates today!
+            </h1>
+            <a class="applyBtn" href="/comingsoon.html"
+              >Book Free Consultation</a
+            >
+          </div>
+        </div>
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="false"
+                aria-controls="faqCollapseOne"
+              >
+                1. How do I apply for a loan?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can apply for a loan by clicking the “Apply Now” button on
+                our homepage and following the instructions. Our team will
+                review your application and get in touch with you within 24-48
+                hours.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                2. What documents are required?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Typically, you will need to provide proof of identity (e.g.,
+                passport, driver’s license), proof of address (e.g., utility
+                bill), and proof of income (e.g., pay slips or bank statements).
+                Exact requirements may vary based on your application.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree"
+                aria-expanded="false"
+                aria-controls="faqCollapseThree"
+              >
+                3. How long does it take to get approved?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Our loan approval process typically takes 24 to 48 hours after
+                we receive all the required documents. In some cases, it may
+                take a bit longer, but we strive to keep you updated throughout
+                the process.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour"
+                aria-expanded="false"
+                aria-controls="faqCollapseFour"
+              >
+                4. What interest rates do you offer?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Our interest rates vary depending on the loan type, your credit
+                score, and other eligibility criteria. Once your application is
+                reviewed, we’ll provide you with a personalized rate offer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support -->
+    <div class="needtohelp comonmarpad phone-card-container" id="support">
+      <div class="container">
+        <div class="row">
+          <h4>Support</h4>
+          <ul>
+            <li>
+              <a href="mailto: Support@edumanager.co">
+                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <div class="texspan">
+                  <h5>eMail</h5>
+                  <p>Support@edumanager.co</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+91-1169655297">
+                <span><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
+                <div class="texspan">
+                  <h5>Call Us</h5>
+                  <p>+91-11-69655297</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=918448076761&text=Hi I am Looking for Loan Expert Assistance"
+              >
+                <span>
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </span>
+                <div class="texspan">
+                  <h5>Chat With Us</h5>
+                  <p>+91 8448076761</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row firstsection">
+          <div class="col-md-12 col-lg-2">
+            <div class="footerlogo">
+              <img src="/images/eduLogo.svg" alt="edumanager" />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="footer_menu_Sec">
+              <h4>EduManager</h4>
+              <ul>
+                <li>
+                  <a href="/comingsoon.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/comingsoon.html">Careers</a>
+                </li>
+                <li><a href="/comingsoon.html">Support</a></li>
+                <li><a href="/comingsoon.html">Blogs</a></li>
+                <li><a href="/comingsoon.html">Partner with us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="footer_menu_Sec">
+              <h4>Group Brands</h4>
+              <ul>
+                <li>
+                  <a href="https://www.taxmanager.in/tm360/">TaxManager</a>
+                </li>
+                <li><a href="http://cfoserve.in/">CFOServe</a></li>
+                <li><a href="https://riseit360.com/">RiseIT360</a></li>
+                <li><a href="/comingsoon.html">EduManager</a></li>
+                <li>
+                  <a href="https://taxmanager.in/tm360/startup/index"
+                    >StartupManager</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="footer_menu_Sec">
+              <h4>Subscribe</h4>
+              <ul>
+                <li><a href="/comingsoon.html">OPT-In</a></li>
+                <li><a href="/comingsoon.html">OPT-Out</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-1"></div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer_menu_Sec">
+              <h4>Support</h4>
+              <ul class="support_sec_are">
+                <li>
+                  <a href="#support">
+                    <span><i class="fa fa-life-ring"></i></span> Need Help?
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+911169655297">
+                    <span><i class="fa fa-phone"></i></span> +91-11-69655297
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto: Support@eduManager.co">
+                    <span><i class="fa fa-envelope"></i></span>
+                    Support@eduManager.co
+                  </a>
+                </li>
+              </ul>
+              <ul class="catifications">
+                <li>
+                  <a href="/certified"
+                    ><img
+                      src="/images/RISING-ADVISORY-SERVICES-PRIVATE-LIMITED-ISO-9001.webp"
+                      alt="RISING ADVISORY SERVICES PRIVATE LIMITED ISO 9001"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.ssl.com/faqs/faq-what-is-ssl/"
+                    target="_blank"
+                    ><img
+                      src="/images/ssl-1.webp"
+                      alt="RISING ADVISORY SERVICES PRIVATE LIMITED ISO 27001"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-footer">
+        <div class="container">
+          <div class="row secondfooter">
+            <div class="col-md-6 col-lg-2 p-0">
+              <ul>
+                <li><a href="/privacy-policy">Privacy Policy </a></li>
+                <li><a href="/terms-and-conditions">Terms of Use </a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <ul>
+                <li><a href="/legal-disclaimer">Legal Disclaimer </a></li>
+                <li><a href="/security">Security </a></li>
+                <li><a href="/sitemap">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="flogsection">
+                <span id="siteseal">
+                  <script
+                    async
+                    type="text/javascript"
+                    src="https://seal.godaddy.com/getSeal?sealID=hfWt4Lbyg7Aq8Lv9qJbo518SKoqGu9oKaGpc35I4EQx12oaanVgRzZPAljsR"
+                  ></script>
+                </span>
+                <div class="build-with">
+                  <span
+                    ><img src="/images/india-flag.svg" alt="india-flag"
+                  /></span>
+                  <span>Built with Love <br />Made in India</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <ul class="social-mediased">
+                <li>
+                  <h2>Follow us on</h2>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/"
+                    aria-label="Facebook taxmanager"
+                    ><span><i class="fab fa-facebook-f"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    aria-label="Instagram taxmanager"
+                  >
+                    <span>
+                      <i class="fa-brands fa-instagram"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="#" aria-label="Twitter taxmanager">
+                    <span>
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    aria-label="Linkedin Taxmanager"
+                    ><span><i class="fab fa-linkedin-in"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <p><span>@EduManager.</span> All rights reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- PDF Views-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- carousel -->
+    <script src="/js/owl.carousel.js"></script>
+
+    <!--emiChart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <!--own JS code-->
+    <script src=" /js/main.js"></script>
+    <script src=" /js/emi-calculation.js"></script>
+  </body>
+</html>
